@@ -48,7 +48,7 @@ public class StudentList {
 			for (int i = 1; i < list.length - h; i++) {
 				k = list[i].getLastName();
 				l = list[i-1].getLastName();
-				if (k.compareTo(l)>0) {
+				if (k.compareTo(l)<0) {
 					list[i] = list[i-1];
 					list[i-1] = temp[i];
 					temp = list.clone();
